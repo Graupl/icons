@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-alpha.3](https://github.com/Graupl/graupl/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2024-05-13)
+
+
+### Bug Fixes
+
+* correct export path ([8b6aae4](https://github.com/Graupl/graupl/commit/8b6aae4230306885d501a0a6f3b93ed302e0719f))
+* correct icon classes ([9354330](https://github.com/Graupl/graupl/commit/935433092d3bab4a75f8aabe8a47cabf45793e1b))
+
 ## [1.0.0-alpha.2](https://github.com/Graupl/graupl/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2024-05-13)
 
 
