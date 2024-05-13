@@ -1,0 +1,26 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.0.0-alpha.0 (2024-05-13)
+
+
+### Features
+
+* initial commit ([f418b76](https://github.com/Graupl/graupl/commit/f418b76a12c1130a95539f1993e8be934e81f301))
+
+
+### Documentation
+
+* add github docs ([67ee35b](https://github.com/Graupl/graupl/commit/67ee35b20ccbb6bcb7cb63a61ca7729cc760d21e))
+
+
+### Continuous Integration
+
+* remove docs build ([e1d6781](https://github.com/Graupl/graupl/commit/e1d6781e44a613e9a6a97db83da5c4ed44b124fe))
+
+
+### Build System
+
+* add husky hooks ([db940e7](https://github.com/Graupl/graupl/commit/db940e730026eb25fd90d6a63c049f7d5967d0f9))
+* **npm:** move graupl to peer dependency ([547ef4f](https://github.com/Graupl/graupl/commit/547ef4f75c94d66af69ed2330e877284836ca6bd))
