@@ -1,0 +1,40 @@
+// Icon mixins.
+
+@use "../component/icon/variables" as *;
+
+@mixin apply-base() {
+  display: $icon-display;
+  width: $icon-width;
+  height: $icon-height;
+  background-color: $icon-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: sub;
+  mask-image: $icon;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+
+@mixin apply($target: "self") {
+  @if $target == "before" {
+    &::before {
+      @include apply-base;
+
+      content: "";
+      margin-inline-end: $icon-spacer;
+    }
+  } @else if $target == "after" {
+    &::after {
+      @include apply-base;
+
+      content: "";
+      margin-inline-start: $icon-spacer;
+    }
+  } @else {
+    @include apply-base;
+
+    margin-inline: $icon-spacer $icon-spacer;
+  }
+}

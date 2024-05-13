@@ -1,0 +1,37 @@
+// Graupl Icon Component.
+
+@use "defaults";
+@use "../../../../node_modules/@graupl/graupl/src/scss/defaults" as
+  root-defaults;
+@use "../../../../node_modules/@graupl/graupl/src/scss/theme/color/variables" as
+  color;
+@use "../../mixins/icon";
+@use "sass:map";
+
+.icon {
+  @include icon.apply;
+
+  &-before {
+    @include icon.apply("before");
+  }
+
+  &-after {
+    @include icon.apply("after");
+  }
+}
+
+@each $name, $icon in defaults.$icons {
+  &.#{$name} {
+    --#{root-defaults.$prefix}-icon: #{$icon};
+  }
+}
+
+@each $color, $map in color.$theme-active {
+  @each $shade, $value in $map {
+    $name: #{$color}-#{$shade};
+
+    .icon-#{$name} {
+      --#{root-defaults.$prefix}-icon-color: #{$value};
+    }
+  }
+}

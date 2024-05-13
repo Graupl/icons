@@ -1,0 +1,14 @@
+// Default values for Graupl.
+//
+// Generally, these should not be used directly when styling components.
+// They are mainly used to provide default fallbacks for custom properties
+// which can be found in the `variables.scss` file.
+
+// Icon properties.
+$icon-display: inline-block !default;
+$icon-size: 1.25em !default;
+
+// Icons.
+// This should be a key/value pair for the name of the icon and the path to the icon's SVG.
+$custom-icons: () !default;
+$icons: $custom-icons;
