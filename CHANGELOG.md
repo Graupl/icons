@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-alpha.1](https://github.com/Graupl/graupl/compare/v1.0.0-alpha.0...v1.0.0-alpha.1) (2024-05-13)
+
+
+### Build System
+
+* refine peer dep ([8553b02](https://github.com/Graupl/graupl/commit/8553b02fb0ae608252189965714502cf7f760e9a))
+
 ## 1.0.0-alpha.0 (2024-05-13)
 
 
