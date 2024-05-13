@@ -60,6 +60,6 @@
     "stylelint-prettier": "^5.0.0"
   },
   "peerDependencies": {
-    "@graupl/graupl": "1.x"
+    "@graupl/graupl": ">=1.0.0-alpha.8"
   }
 }
