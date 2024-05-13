@@ -1,12 +1,9 @@
 // Variables referencing custom properties.
 
 @use "defaults";
-@use "../../../../node_modules/@graupl/graupl/src/scss/defaults" as
-  root-defaults;
-@use "../../../../node_modules/@graupl/graupl/src/scss/theme/color/variables" as
-  theme;
-@use "../../../../node_modules/@graupl/graupl/src/scss/variables" as
-  root-variables;
+@use "pkg:@graupl/graupl/src/defaults" as root-defaults;
+@use "pkg:@graupl/graupl/src/theme/color/variables" as theme;
+@use "pkg:@graupl/graupl/src/variables" as root-variables;
 @use "sass:map";
 
 $icon-display: var(

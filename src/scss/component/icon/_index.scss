@@ -1,10 +1,8 @@
 // Graupl Icon Component.
 
 @use "defaults";
-@use "../../../../node_modules/@graupl/graupl/src/scss/defaults" as
-  root-defaults;
-@use "../../../../node_modules/@graupl/graupl/src/scss/theme/color/variables" as
-  color;
+@use "pkg:@graupl/graupl/src/defaults" as root-defaults;
+@use "pkg:@graupl/graupl/src/theme/color/variables" as color;
 @use "../../mixins/icon";
 @use "sass:map";
 
