@@ -19,7 +19,7 @@
 }
 
 @each $name, $icon in defaults.$icons {
-  &.#{$name} {
+  .icon-#{$name} {
     --#{root-defaults.$prefix}-icon: #{$icon};
   }
 }
