@@ -5,7 +5,7 @@
   "type": "module",
   "exports": {
     ".": {
-      "sass": "./scss/components/icons.scss"
+      "sass": "./scss/component/icon.scss"
     },
     "./src": {
       "sass": "./src/scss/*.scss"
