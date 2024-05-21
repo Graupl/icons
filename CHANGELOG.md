@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-alpha.4](https://github.com/Graupl/graupl/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2024-05-21)
+
+
+### Features
+
+* add icon handling for button and links ([dfe035d](https://github.com/Graupl/graupl/commit/dfe035d0d4f80a480f2ede468296f5c00fb80ba2))
+
+
+### Bug Fixes
+
+* update reference to root-color ([2f61535](https://github.com/Graupl/graupl/commit/2f61535fb1783d9d6014d4b236b5efd056061d02))
+
 ## [1.0.0-alpha.3](https://github.com/Graupl/graupl/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2024-05-13)
 
 
