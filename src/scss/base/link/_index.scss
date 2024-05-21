@@ -1,0 +1,12 @@
+// @gruapl/icons link base styles.
+
+@use "variables" as *;
+@use "pkg:@graupl/graupl/src/defaults" as root-defaults;
+@use "pkg:@graupl/graupl/src/base/link/variables" as link;
+@use "pkg:@graupl/graupl/src/mixins/layer" as *;
+
+@include layer(theme) {
+  a {
+    --#{root-defaults.$prefix}-icon-color: #{link.$link-color};
+  }
+}
