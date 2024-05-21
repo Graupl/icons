@@ -16,10 +16,7 @@ $icon-display: var(
 $icon-size: var(--#{root-defaults.$prefix}-icon-size, #{defaults.$icon-size});
 $icon-width: var(--#{root-defaults.$prefix}-icon-width, #{$icon-size});
 $icon-height: var(--#{root-defaults.$prefix}-icon-height, #{$icon-size});
-$icon-color: var(
-  --#{root-defaults.$prefix}-icon-color,
-  #{theme.$root-font-color}
-);
+$icon-color: var(--#{root-defaults.$prefix}-icon-color, #{theme.$root-color});
 $icon: var(--#{root-defaults.$prefix}-icon, none);
 $icon-spacer: var(
   --#{root-defaults.$prefix}-icon-spacer,
