@@ -1,0 +1,2 @@
+@layer graupl.theme{.button{--graupl-icon-color:var(--graupl-button-color,var(--graupl-theme-active--primary--900,var(--graupl-theme-light--primary--900,var(--graupl-primary--900,#001233))))}}
+/*# sourceMappingURL=button.css.map */
