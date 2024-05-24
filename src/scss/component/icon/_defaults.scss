@@ -6,6 +6,13 @@
 // They should not be used to define direct property values (i.e. font-size, color, etc.).
 // Those should be defined as custom properties in the `_variables.scss` file.
 
+// Icon selectors.
+$icon-selector: ".icon" !default;
+$icon-before-selector: "#{$icon-selector}-before" !default;
+$icon-after-selector: "#{$icon-selector}-after" !default;
+$icon-prefix-selector: "." !default;
+$icon-color-prefix-selector: "." !default;
+
 // Icon properties.
 $icon-display: inline-block !default;
 $icon-size: 1.25em !default;
