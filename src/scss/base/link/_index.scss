@@ -2,11 +2,12 @@
 
 @use "variables" as *;
 @use "pkg:@graupl/graupl/src/defaults" as root-defaults;
+@use "pkg:@graupl/graupl/src/base/link/defaults" as link-defaults;
 @use "pkg:@graupl/graupl/src/base/link/variables" as link;
 @use "pkg:@graupl/graupl/src/mixins/layer" as *;
 
 @include layer(theme) {
-  a {
+  #{link-defaults.$link-selector} {
     --#{root-defaults.$prefix}-icon-color: #{link.$link-color};
   }
 }

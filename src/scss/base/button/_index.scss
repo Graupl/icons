@@ -1,12 +1,13 @@
-// @gruapl/icons button component styles.
+// @gruapl/icons button base styles.
 
 @use "variables" as *;
 @use "pkg:@graupl/graupl/src/defaults" as root-defaults;
+@use "pkg:@graupl/graupl/src/base/button/defaults" as button-defaults;
 @use "pkg:@graupl/graupl/src/component/button/variables" as button;
 @use "pkg:@graupl/graupl/src/mixins/layer" as *;
 
 @include layer(theme) {
-  .button {
+  #{button-defaults.$button-selector} {
     --#{root-defaults.$prefix}-icon-color: #{button.$button-color};
   }
 }
