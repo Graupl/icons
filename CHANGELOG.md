@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-alpha.5](https://github.com/Graupl/graupl/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2024-05-24)
+
+
+### Features
+
+* **icons:** allow selectors to be customized ([14a0d65](https://github.com/Graupl/graupl/commit/14a0d6582b6d57be6fe3cb4734fa506a30db69c8))
+
 ## [1.0.0-alpha.4](https://github.com/Graupl/graupl/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2024-05-21)
 
 
