@@ -15,7 +15,7 @@
     }
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "commit": "git cz",
     "eslint": "eslint .",
     "prettier": "prettier '**/*.{js,mjs,cjs,scss,sass}'",
@@ -41,7 +41,7 @@
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
     "@eslint/js": "^9.0.0",
-    "@graupl/graupl": "^1.0.0-alpha.12",
+    "@graupl/graupl": "^1.0.0-beta.0",
     "autoprefixer": "^10.4.19",
     "commitizen": "^4.3.0",
     "cssnano": "^7.0.1",
@@ -66,6 +66,6 @@
     "stylelint-prettier": "^5.0.0"
   },
   "peerDependencies": {
-    "@graupl/graupl": ">=1.0.0-alpha.12"
+    "@graupl/graupl": ">=1.0.0-beta.0"
   }
 }

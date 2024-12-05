@@ -35,7 +35,7 @@
   #{defaults.$icon-selector},
   #{defaults.$icon-before-selector},
   #{defaults.$icon-after-selector} {
-    @each $color, $map in color.$theme-active {
+    @each $color, $map in map.get(color.$themes, active) {
       @each $shade, $value in $map {
         $name: #{$color}-#{$shade};
 
