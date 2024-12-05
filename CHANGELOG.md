@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-beta.0](https://github.com/Graupl/graupl/compare/v1.0.0-alpha.5...v1.0.0-beta.0) (2024-12-05)
+
+
+### Features
+
+* update to handle graupl beta ([1ef98d3](https://github.com/Graupl/graupl/commit/1ef98d3555872375e475decae08f76b89a73a18f))
+
+
+### Build System
+
+* **husky:** update hooks ([b8a65d7](https://github.com/Graupl/graupl/commit/b8a65d7a01b2f93fffd21fc77fabb97eb01ee413))
+
 ## [1.0.0-alpha.5](https://github.com/Graupl/graupl/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2024-05-24)
 
 
