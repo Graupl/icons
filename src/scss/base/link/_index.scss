@@ -8,6 +8,6 @@
 
 @include layer(theme) {
   #{link-defaults.$link-selector} {
-    --#{root-defaults.$prefix}-icon-color: #{link.$link-color};
+    --#{root-defaults.$prefix}icon-color: #{link.$link-color};
   }
 }

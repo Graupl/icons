@@ -8,6 +8,6 @@
 
 @include layer(theme) {
   #{button-defaults.$button-selector} {
-    --#{root-defaults.$prefix}-icon-color: #{button.$button-color};
+    --#{root-defaults.$prefix}icon-color: #{button.$button-color};
   }
 }

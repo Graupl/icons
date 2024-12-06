@@ -10,15 +10,15 @@
 @use "sass:map";
 
 $icon-display: var(
-  --#{root-defaults.$prefix}-icon-display,
+  --#{root-defaults.$prefix}icon-display,
   #{defaults.$icon-display}
 );
-$icon-size: var(--#{root-defaults.$prefix}-icon-size, #{defaults.$icon-size});
-$icon-width: var(--#{root-defaults.$prefix}-icon-width, #{$icon-size});
-$icon-height: var(--#{root-defaults.$prefix}-icon-height, #{$icon-size});
-$icon-color: var(--#{root-defaults.$prefix}-icon-color, #{theme.$root-color});
-$icon: var(--#{root-defaults.$prefix}-icon, none);
+$icon-size: var(--#{root-defaults.$prefix}icon-size, #{defaults.$icon-size});
+$icon-width: var(--#{root-defaults.$prefix}icon-width, #{$icon-size});
+$icon-height: var(--#{root-defaults.$prefix}icon-height, #{$icon-size});
+$icon-color: var(--#{root-defaults.$prefix}icon-color, #{theme.$root-color});
+$icon: var(--#{root-defaults.$prefix}icon, none);
 $icon-spacer: var(
-  --#{root-defaults.$prefix}-icon-spacer,
+  --#{root-defaults.$prefix}icon-spacer,
   #{map.get(root-variables.$spacers, 2)}
 );
