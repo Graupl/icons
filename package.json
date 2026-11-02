@@ -47,7 +47,7 @@
     "cssnano": "^7.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-jsdoc": "^48.2.3",
     "globals": "^15.0.0",
