@@ -1,0 +1,71 @@
+name: Dependent project tests
+
+on:
+  push:
+    branches: [ '*.x' ]
+  pull_request:
+    branches: [ '*.x' ]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test ${{ matrix.project.repository }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - repository: Graupl/navigation-shelf
+            ref: 1.x
+          - repository: Graupl/graupl
+            ref: 1.x
+
+    steps:
+      - name: Checkout package
+        uses: actions/checkout@v4
+        with:
+          path: package
+          persist-credentials: false
+
+      - name: Checkout dependent project
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ matrix.project.repository }}
+          ref: ${{ matrix.project.ref }}
+          path: dependent
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+
+      - name: Build and pack package changes
+        working-directory: package
+        run: |
+          mkdir -p "$RUNNER_TEMP/candidate-package"
+          npm ci
+          npm run build
+          npm pack --ignore-scripts --pack-destination "$RUNNER_TEMP/candidate-package"
+
+      - name: Install dependent project modules
+        working-directory: dependent
+        run: npm ci
+
+      - name: Install package changes
+        working-directory: dependent
+        run: |
+          archive=("$RUNNER_TEMP"/candidate-package/*.tgz)
+          npm install --no-save "${archive[0]}"
+          package_name=$(tar -xOf "${archive[0]}" package/package.json | node -p 'JSON.parse(require("node:fs").readFileSync(0, "utf8")).name')
+          installed=$(npm ls --all --parseable "$package_name")
+          test "$installed" = "$(pwd -P)/node_modules/$package_name"
+
+      - name: Build the dependent project
+        working-directory: dependent
+        run: npm run build
