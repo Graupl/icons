@@ -60,7 +60,7 @@
     "test:run": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@graupl/core": "^1.0.0-beta.59"
+    "@graupl/core": "^1.0.0-beta.60"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
