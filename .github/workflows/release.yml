@@ -61,7 +61,7 @@ jobs:
           name: ${{ needs.meta.outputs.version }}
           prerelease: ${{ needs.meta.outputs.is_prerelease == 'true' }}
           make_latest: ${{ needs.meta.outputs.is_prerelease != 'true' }}
-          generate_release_notes: true
+          body_path: CURRENT_RELEASE.md
 
   publish_npm:
     if: github.repository == 'Graupl/icons'
@@ -82,7 +82,8 @@ jobs:
       - name: Install modules
         run: npm ci
 
-      - run: npm run build
+      - name: Run build
+        run: npm run build
 
       - name: Publish to npm (full release)
         if: needs.meta.outputs.is_prerelease != 'true'

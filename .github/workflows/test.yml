@@ -36,6 +36,24 @@ jobs:
       - name: Check package contents
         run: npm pack --dry-run
 
+  eslint:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+          cache: npm
+
+      - name: Install modules
+        run: npm ci
+
+      - name: Run eslint
+        run: npm run eslint
+
   stylelint:
     runs-on: ubuntu-24.04
     steps:

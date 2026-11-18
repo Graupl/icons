@@ -56,11 +56,17 @@ Use Node.js 24, which is also used by the project workflows. Run `npm install` t
 
 Run commands from the repository root. Sass source lives in `src/scss/`, and public Sass entry points live in `scss/`.
 
-Run `npm run stylelint` and `npm run prettier -- --check` to check the source. Run `npm run build` to regenerate the CSS and source maps in `dist/css/`. Review generated changes along with source changes.
+Run `npm run eslint`, `npm run stylelint` and `npm run prettier -- --check` to check the source. Run `npm run build` to regenerate the CSS and source maps in `dist/css/`. Review generated changes along with source changes.
 
 Run `npm run test:unit` for unit tests. Install Playwright browsers with `npx --no playwright install`, then run `npm run test:browser`. Both commands allow an empty suite.
 
 Use `npm pack --dry-run` to check which files npm will publish.
+
+Use `npm run lint` to apply lint and formatting fixes. Review the changes before committing.
+
+## Prepare a release
+
+Run `npm run release -- --prerelease beta` for a beta or `npm run release` for a stable release. The command runs lint, build, and unit checks, updates the manifest and lockfile, writes the changelog and release notes, and creates a local commit and tag. Pushing the tag starts the GitHub release and npm publishing workflow.
 
 ## Commit guidelines
 

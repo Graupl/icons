@@ -21,7 +21,7 @@ See the specification for commit types, optional scopes, and how to describe bre
 You can use [Commitizen](https://commitizen.github.io/cz-cli/) to write a commit message through guided prompts:
 
 ```shell
-git commit
+npm run commit
 ```
 
 Read the [contribution guidelines](CONTRIBUTING.md) for the full submission process.
