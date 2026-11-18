@@ -58,6 +58,8 @@ Run commands from the repository root. Sass source lives in `src/scss/`, and pub
 
 Run `npm run stylelint` and `npm run prettier -- --check` to check the source. Run `npm run build` to regenerate the CSS and source maps in `dist/css/`. Review generated changes along with source changes.
 
+Run `npm run test:unit` for unit tests. Install Playwright browsers with `npx --no playwright install`, then run `npm run test:browser`. Both commands allow an empty suite.
+
 Use `npm pack --dry-run` to check which files npm will publish.
 
 ## Commit guidelines

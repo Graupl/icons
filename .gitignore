@@ -1,2 +1,4 @@
 node_modules/
 .DS_Store
+.vitest-attachments/
+tests/**/__screenshots__/**/*-darwin.png
