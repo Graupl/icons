@@ -49,7 +49,7 @@
     "prettier": "prettier \"**/*.{js,scss}\""
   },
   "dependencies": {
-    "@graupl/core": "^1.0.0-beta.58"
+    "@graupl/core": "^1.0.0-beta.59"
   },
   "devDependencies": {
     "lightningcss": "^1.30.2",
