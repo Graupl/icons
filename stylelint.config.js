@@ -9,7 +9,15 @@ const config = {
     "prettier/prettier": true,
     "scss/comment-no-empty": null,
     "selector-max-compound-selectors": 4,
+    "max-nesting-depth": 8,
     "selector-no-qualifying-type": null,
+    "@stylistic/string-quotes": "double",
+    "@stylistic/function-parentheses-space-inside": "never-single-line",
+    "@stylistic/indentation": null,
+    "@stylistic/block-opening-brace-space-before": "never-single-line",
+    "scss/at-mixin-pattern": "^[-_]?[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+    "scss/dollar-variable-pattern": "^[-_]?[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+    "custom-property-pattern": "^[a-z][a-z0-9]*(-{1,2}[a-z0-9]+)*$",
   },
 };
 

@@ -4,4 +4,4 @@
 // cleaner way to reference custom properties.
 
 @use "defaults";
-@use "pkg:@graupl/graupl/src/defaults" as root-defaults;
+@use "pkg:@graupl/core/src/defaults" as root-defaults;

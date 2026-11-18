@@ -1,9 +1,2 @@
-# Lock files.
-package-lock.json
-
-# Dependency directories.
-node_modules
-
-# Generated documention.
-docs/.vitepress/cache
-docs/.vitepress/dist
+node_modules/
+.DS_Store
